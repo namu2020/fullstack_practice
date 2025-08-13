@@ -21,7 +21,7 @@
             const name = document.getElementById('name').value;
             const birthdate = document.getElementById('birthdate').value;
             
-            const response = await fetch('http://127.0.0.1:5000/api/fortune', {
+            const response = await fetch('http://namunamu.pythonanywhere.com', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({name, birthdate})
@@ -157,7 +157,7 @@
             }
             
             try {
-                const response = await fetch('http://localhost:8000/api/fortune', {
+                const response = await fetch('http://namunamu.pythonanywhere.com', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({name, birthdate})
